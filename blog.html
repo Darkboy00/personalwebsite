@@ -2,19 +2,119 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8">
-  <title>Blog - Mefa Portfolio</title>
+  <title>Blog – Mehmet Kaymakcı</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .blog-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      transition: transform 0.2s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .blog-card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .blog-card p {
+      color: #555;
+    }
+
+    .blog-card time {
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #222;
+      color: white;
+      margin-top: 50px;
+    }
+
+    @media (max-width: 600px) {
+      .blog-card {
+        padding: 15px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Blog</h1>
-  <ul>
-    <li>
-      <a href="blog-renk-uyumu.html">🎨 Renk Uyumu ile Etkileyici Tasarım Nasıl Yapılır?</a><br>
-      <small>05 Temmuz 2025</small>
-    </li>
-    <li>
-      <a href="blog-baski-hatalari.html">🖨️ Matbaa Baskısında Yapılan 5 Yaygın Hata</a><br>
-      <small>01 Temmuz 2025</small>
-    </li>
-  </ul>
+
+  <header>
+    <h1>Mehmet Kaymakcı Blog</h1>
+  </header>
+
+  <nav>
+    <a href="/">Anasayfa</a>
+    <a href="/iletisim.html">İletişim</a>
+    <a href="/hakkimda.html">Hakkımda</a>
+  </nav>
+
+  <div class="container">
+    <div class="blog-card">
+      <h2><a href="blog-renk.html">🎨 Renk Uyumu ile Etkileyici Tasarım</a></h2>
+      <time datetime="2025-07-05">5 Temmuz 2025</time>
+      <p>Renk seçimi, tasarımın ruhunu belirler. Bu yazıda etkili renk kombinasyonlarını nasıl kullanacağınızı öğrenin.</p>
+    </div>
+
+    <div class="blog-card">
+      <h2><a href="blog-baski-hatalari.html">🖨️ Matbaa Baskısında Yapılan 5 Yaygın Hata</a></h2>
+      <time datetime="2025-07-01">1 Temmuz 2025</time>
+      <p>Baskıya gönderilen işlerde sık yapılan hataları ve bunlardan nasıl kaçınılacağını öğrenmek için bu yazıyı okuyun.</p>
+    </div>
+
+    <div class="blog-card">
+      <h2><a href="blog-fontlar.html">🔠 Profesyonel Görünen Font Seçimi</a></h2>
+      <time datetime="2025-06-28">28 Haziran 2025</time>
+      <p>Doğru yazı tipi, markanı yansıtır. Hangi tipografiler profesyonel görünür? Örneklerle açıklıyoruz.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Mehmet Kaymakcı – Tüm Hakları Saklıdır
+  </footer>
+
 </body>
 </html>
